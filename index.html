@@ -5,49 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto&display=swap" rel="stylesheet">
+    <title>WALDEN</title>
 </head>
 
 <body>
     <header>
-        <a class="logo" href="#">WALDEN</a>
-        <div class="header__menu_wrapper">
-            <ul class="header__menu">
-                <li class="header__menu_item"><a href="#">Meditation Cushions</a></li>
-                <li class="header__menu_item"><a href="#">The Gong</a></li>
-                <li class="header__menu_item"><a href="#">Apparel</a></li>
-                <li class="header__menu_item"><a href="#">ABOUT</a></li>
+        <div class="header__menu_wrapper container">
+            <a class="logo link" href="#">
+                <svg width="20.35" height="15.21" class="logo_icon">
+                    <use href="./img/logo/symbol-defs.svg#icon-w"></use>
+                </svg>
+                <svg width="20.35" height="15.21" class="logo_icon">
+                    <use href="./img/logo/symbol-defs.svg#icon-a"></use>
+                </svg>
+                <svg width="20.35" height="15.21" class="logo_icon">
+                    <use href="./img/logo/symbol-defs.svg#icon-l"></use>
+                </svg>
+                <svg width="20.35" height="15.21" class="logo_icon">
+                    <use href="./img/logo/symbol-defs.svg#icon-d"></use>
+                </svg>
+                <svg width="20.35" height="15.21" class="logo_icon">
+                    <use href="./img/logo/symbol-defs.svg#icon-e"></use>
+                </svg>
+                <svg width="20.35" height="15.21" class="logo_icon">
+                    <use href="./img/logo/symbol-defs.svg#icon-n"></use>
+                </svg>
+            </a>
+            <ul class="header__menu list">
+                <li class="header__menu_item"><a href="#" class="header__menu_link link">Meditation Cushions</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link link">The Gong</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link link">Apparel</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link link">ABOUT</a></li>
                 <button type="button" class="header__menu_btn"></button>
-                <button type="button" class="header__menu_btn-shop">Shop Meditation Set</button>
             </ul>
         </div>
+        <button type="button" class="header__menu_btn-shop">Shop Meditation Set</button>
     </header>
     <main>
-        <section>
-            <p>We believe everyone needs a space to be present, explore the mind, and find stillness. Walden designs and
+        <section class="container">
+            <h2 class="goods-list_hdr">We believe everyone needs a space to be present, explore the mind, and find
+                stillness. Walden designs and
                 engineers
-                tools for meditation.</p>
-            <ul class="goods-list">
-                <li class="goods-list__item">
-                    <picture></picture>
-                    <p>30 Day Trial on Open with Every Purchase</p>
-                </li>
-                <li class="goods-list__item">
-                    <picture></picture>
-                    <p>Rose Meditation Cushion + Mat Set</p>
-                </li>
-                <li class="goods-list__item">
-                    <picture></picture>
-                    <p>XL Meditation Cushion Set</p>
-                </li>
-                <li class="goods-list__item">
-                    <picture></picture>
-                    <p>Travel Meditation Cushion</p>
-                </li>
-                <li class="goods-list__item">
-                    <picture></picture>
-                    <p>Walden x MoPQ Collection</p>
-                </li>
+                tools for meditation.</h2>
+            <ul class="goods-list list">
+                <div class="goods-list_wrapper">
+                    <li class="goods-list__item">
+                        <picture>
+                            <source srcset="
+                        ./img/goods-list/1-1x.jpg 1x,
+                        ./img/goods-list/1-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src=" ./img/goods-list/1-1x.jpg" alt="woman meditating" width="386" height="504">
+                        </picture>
+                        <p class="goods-list__deskr">30 Day Trial on Open with Every Purchase</p>
+                    </li>
+                </div>
+                <div class="goods-list_wrapper">
+                    <li class="goods-list__item">
+                        <picture>
+                            <source srcset="
+                        ./img/goods-list/2-1x.jpg 1x,
+                        ./img/goods-list/2-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src=" ./img/goods-list/2-1x.jpg" alt="woman meditating" width="386" height="504">
+                        </picture>
+                        <p class="goods-list__deskr">Rose Meditation Cushion + Mat Set</p>
+                    </li>
+                </div>
+                <div class="goods-list_wrapper">
+                    <li class="goods-list__item">
+                        <picture>
+                            <source srcset="
+                        ./img/goods-list/3-1x.jpg 1x,
+                        ./img/goods-list/3-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src=" ./img/goods-list/3-1x.jpg" alt="woman meditating" width="386" height="504">
+                        </picture>
+                        <p class="goods-list__deskr">XL Meditation Cushion Set</p>
+                    </li>
+                </div>
+                <div class="goods-list_wrapper">
+                    <li class="goods-list__item">
+                        <picture>
+                            <source srcset="
+                        ./img/goods-list/4-1x.jpg 1x,
+                        ./img/goods-list/4-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src=" ./img/goods-list/4-1x.jpg" alt="woman meditating" width="386" height="504">
+                        </picture>
+                        <p class="goods-list__deskr">Travel Meditation Cushion</p>
+                    </li>
+                </div>
+                <div class="goods-list_wrapper">
+                    <li class="goods-list__item">
+                        <picture>
+                            <source srcset="
+                        ./img/goods-list/5-1x.jpg 1x,
+                        ./img/goods-list/5-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src=" ./img/goods-list/5-1x.jpg" alt="woman meditating" width="386" height="504">
+                        </picture>
+                        <p class="goods-list__deskr">Walden x MoPQ Collection</p>
+                    </li>
+                </div>
             </ul>
             <div class="gong-section">
                 <h1 class="gong-section__hdr">The Gong</h1>

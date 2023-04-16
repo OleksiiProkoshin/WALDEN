@@ -1,0 +1,143 @@
+/* reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    padding: 0 35px;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.svg {
+    display: block;
+}
+
+/* ==============HEADER============= */
+.header__menu_wrapper {
+    background-image: url(./img/header/header-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 720px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    position: relative;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .header__menu_wrapper {
+        background-image: url(./img/header/header-2x.jpg);
+    }
+}
+
+.logo {
+    color: black;
+    letter-spacing: -4px;
+}
+
+.logo_icon {
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu_item:nth-child(-n+3) {
+    padding-right: 40px;
+}
+
+.header__menu_link {
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #E9E9E9;
+}
+
+.header__menu_btn {
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #FBFBFB;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+.header__menu_btn-shop {
+    padding: 13px 16px 11px;
+    font-size: 14px;
+    line-height: 1;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: absolute;
+    left: calc(50% - 169px/2 + 0.5px);
+    top: 647px;
+}
+
+/* ============GOODS LIST=========== */
+
+.goods-list_hdr {
+    font-size: 28px;
+    line-height: 1.3;
+    text-align: center;
+    color: #757575;
+    max-width: 997px;
+    margin: 79px 0 45px;
+}
+
+.goods-list__deskr {
+    padding-top: 17px;
+}
+
+.goods-list {
+    display: flex;
+    gap: 36px;
+}
+
+.goods-list__deskr {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #757575;
+}
