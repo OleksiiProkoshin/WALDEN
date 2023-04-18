@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,24 +18,7 @@
     <header>
         <div class="header__menu_wrapper container">
             <a class="logo link" href="#">
-                <svg width="20.35" height="15.21" class="logo_icon">
-                    <use href="./img/logo/symbol-defs.svg#icon-w"></use>
-                </svg>
-                <svg width="20.35" height="15.21" class="logo_icon">
-                    <use href="./img/logo/symbol-defs.svg#icon-a"></use>
-                </svg>
-                <svg width="20.35" height="15.21" class="logo_icon">
-                    <use href="./img/logo/symbol-defs.svg#icon-l"></use>
-                </svg>
-                <svg width="20.35" height="15.21" class="logo_icon">
-                    <use href="./img/logo/symbol-defs.svg#icon-d"></use>
-                </svg>
-                <svg width="20.35" height="15.21" class="logo_icon">
-                    <use href="./img/logo/symbol-defs.svg#icon-e"></use>
-                </svg>
-                <svg width="20.35" height="15.21" class="logo_icon">
-                    <use href="./img/logo/symbol-defs.svg#icon-n"></use>
-                </svg>
+                <img src="./img/logo/logo.png" alt="walden">
             </a>
             <ul class="header__menu list">
                 <li class="header__menu_item"><a href="#" class="header__menu_link link">Meditation Cushions</a></li>
@@ -47,162 +31,431 @@
         <button type="button" class="header__menu_btn-shop">Shop Meditation Set</button>
     </header>
     <main>
-        <section class="container">
-            <h2 class="goods-list_hdr">We believe everyone needs a space to be present, explore the mind, and find
-                stillness. Walden designs and
-                engineers
-                tools for meditation.</h2>
-            <ul class="goods-list list">
-                <div class="goods-list_wrapper">
-                    <li class="goods-list__item">
-                        <picture>
+        <section>
+            <div class="goods__wrapper container">
+                <h2 class="goods-list_hdr">We believe everyone needs a space to be present, explore the mind, and find
+                    stillness. Walden designs and
+                    engineers
+                    tools for meditation.</h2>
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                ./img/goods-list/1-1x.jpg 1x,
+                                ./img/goods-list/1-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src=" ./img/goods-list/1-1x.jpg" alt="30 day trial" width="386" height="504">
+                            </picture>
+                            <p class="goods-list__deskr">30 Day Trial on Open with Every Purchase</p>
+                            <picture>
+                        </div>
+                        <div class="swiper-slide">
                             <source srcset="
-                        ./img/goods-list/1-1x.jpg 1x,
-                        ./img/goods-list/1-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
-                            <img src=" ./img/goods-list/1-1x.jpg" alt="woman meditating" width="386" height="504">
-                        </picture>
-                        <p class="goods-list__deskr">30 Day Trial on Open with Every Purchase</p>
-                    </li>
-                </div>
-                <div class="goods-list_wrapper">
-                    <li class="goods-list__item">
-                        <picture>
-                            <source srcset="
-                        ./img/goods-list/2-1x.jpg 1x,
-                        ./img/goods-list/2-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                ./img/goods-list/2-1x.jpg 1x,
+                                ./img/goods-list/2-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
                             <img src=" ./img/goods-list/2-1x.jpg" alt="woman meditating" width="386" height="504">
-                        </picture>
-                        <p class="goods-list__deskr">Rose Meditation Cushion + Mat Set</p>
-                    </li>
+                            </picture>
+                            <p class="goods-list__deskr">Rose Meditation Cushion + Mat Set</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                ./img/goods-list/3-1x.jpg 1x,
+                                ./img/goods-list/3-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src=" ./img/goods-list/3-1x.jpg" alt="xl meditation cushion set" width="386"
+                                    height="504">
+                            </picture>
+                            <p class="goods-list__deskr">XL Meditation Cushion Set</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/goods-list/4-1x.jpg 1x,
+                                        ./img/goods-list/4-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src=" ./img/goods-list/4-1x.jpg" alt="travel meditation cushion" width="386"
+                                    height="504">
+                            </picture>
+                            <p class="goods-list__deskr">Travel Meditation Cushion</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/goods-list/5-1x.jpg 1x,
+                                        ./img/goods-list/5-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src=" ./img/goods-list/5-1x.jpg" alt="mopq collection" width="386" height="504">
+                            </picture>
+                            <p class="goods-list__deskr">Walden x MoPQ Collection</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                    ./img/goods-list/6-1x.jpg 1x,
+                                    ./img/goods-list/6-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src=" ./img/goods-list/6-1x.jpg" alt="meditation cushion" width="386" height="504">
+                            </picture>
+                            <p class="goods-list__deskr">Walden Canvas Meditation Cushion</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                    ./img/goods-list/7-1x.jpg 1x,
+                                    ./img/goods-list/7-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src=" ./img/goods-list/7-1x.jpg" alt="sienna meditation cushion set" width="386"
+                                    height="504">
+                            </picture>
+                            <p class="goods-list__deskr">Sienna Meditation Cushion Set</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                    ./img/goods-list/8-1x.jpg 1x,
+                                    ./img/goods-list/8-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src=" ./img/goods-list/8-1x.jpg" alt="cloud cushion" width="386" height="504">
+                            </picture>
+                            <p class="goods-list__deskr">Cloud Meditation Cushion</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                    ./img/goods-list/9-1x.jpg 1x,
+                                    ./img/goods-list/9-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src=" ./img/goods-list/9-1x.jpg" alt="forest cushion" width="386" height="504">
+                            </picture>
+                            <p class="goods-list__deskr">Forest Meditation Cushion</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="goods-list_wrapper">
-                    <li class="goods-list__item">
-                        <picture>
-                            <source srcset="
-                        ./img/goods-list/3-1x.jpg 1x,
-                        ./img/goods-list/3-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
-                            <img src=" ./img/goods-list/3-1x.jpg" alt="woman meditating" width="386" height="504">
-                        </picture>
-                        <p class="goods-list__deskr">XL Meditation Cushion Set</p>
-                    </li>
-                </div>
-                <div class="goods-list_wrapper">
-                    <li class="goods-list__item">
-                        <picture>
-                            <source srcset="
-                        ./img/goods-list/4-1x.jpg 1x,
-                        ./img/goods-list/4-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
-                            <img src=" ./img/goods-list/4-1x.jpg" alt="woman meditating" width="386" height="504">
-                        </picture>
-                        <p class="goods-list__deskr">Travel Meditation Cushion</p>
-                    </li>
-                </div>
-                <div class="goods-list_wrapper">
-                    <li class="goods-list__item">
-                        <picture>
-                            <source srcset="
-                        ./img/goods-list/5-1x.jpg 1x,
-                        ./img/goods-list/5-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
-                            <img src=" ./img/goods-list/5-1x.jpg" alt="woman meditating" width="386" height="504">
-                        </picture>
-                        <p class="goods-list__deskr">Walden x MoPQ Collection</p>
-                    </li>
-                </div>
-            </ul>
-            <div class="gong-section">
+        </section>
+        <section>
+            <div class="gong-section container">
                 <h1 class="gong-section__hdr">The Gong</h1>
                 <p class="gong-section__dskr">An analogue meditation timer</p>
-                <button type="button">Learn More</button>
+                <button type="button" class="gong-section__btn">Learn More</button>
+            </div>
             </div>
         </section>
         <section>
             <h2 class="WMOOCS__hdr">What Makes Our Original Cushions Special</h2>
-            <div class="WMOOCS__wrapper">
-                <ul class="WMOOCS__list">
-                    <li class="WMOOCS__item">
-                        <picture></picture>
-                        <p>The Walden cushion is filled with organic hypoallergenic buckwheat hull that is sourced from
-                            a farm in upstate New York.</p>
-                    </li>
-                    <li class="WMOOCS__item">
-                        <picture></picture>
-                        <p>The webbing around the cushion provides an extra layer of support by giving a structure to
-                            the buckwheat inside. This
-                            also doubles as an integrated handle.</p>
-                    </li>
-                    <li class="WMOOCS__item">
-                        <picture></picture>
-                        <p>Inspired by high end uphosltery fabric, the Walden cushions use a premium fabric that is anti
-                            microbial, moisture
-                            resistant, and has a great hand that is designed to last a lifetime.</p>
-                    </li>
-                    <li class="WMOOCS__item">
-                        <picture></picture>
-                        <p>The cushion it topped with a layer of gel infused memory foam for added comfort and a body
-                            adaptive feel.</p>
-                    </li>
-                    <li class="WMOOCS__item">
-                        <picture></picture>
-                        <p>Our proprietary fabric is wrinkle resistant and has a luxurious hand feel.</p>
-                    </li>
+            <div class="WMOOCS__wrapper container">
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/1-1x.jpg 1x,
+                                        ./img/wmocs/1-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/1-1x.jpg" alt="rocks on the snow" width="366" height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">The Walden cushion is filled with organic
+                                hypoallergenic
+                                buckwheat
+                                hull that is sourced from
+                                a farm in upstate New York.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/2-1x.jpg 1x,
+                                        ./img/wmocs/2-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/2-1x.jpg" alt="the webbing around the cushion" width="366"
+                                    height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">The webbing around the cushion provides an extra layer
+                                of
+                                support
+                                by giving a structure to
+                                the buckwheat inside. This
+                                also doubles as an integrated handle.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/3-1x.jpg 1x,
+                                        ./img/wmocs/3-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/3-1x.jpg" alt="high end uphosltery fabric" width="366"
+                                    height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">Inspired by high end uphosltery fabric, the Walden
+                                cushions use a premium fabric that is anti microbial, moisture
+                                resistant, and has a great hand that is designed to last a lifetime.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/4-1x.jpg 1x,
+                                        ./img/wmocs/4-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/4-1x.jpg" alt="gel infused memory foam" width="366" height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">The cushion it topped with a layer of gel infused
+                                memory
+                                foam
+                                for
+                                added comfort and a body
+                                adaptive feel.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/5-1x.jpg 1x,
+                                        ./img/wmocs/5-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/5-1x.jpg" alt="wrinkle resistant fabric" width="366" height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">Our proprietary fabric is wrinkle resistant and has a
+                                luxurious
+                                hand feel.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/1-1x.jpg 1x,
+                                        ./img/wmocs/1-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/1-1x.jpg" alt="rocks on the snow" width="366" height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">The Walden cushion is filled with organic
+                                hypoallergenic
+                                buckwheat
+                                hull that is sourced from
+                                a farm in upstate New York.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/2-1x.jpg 1x,
+                                        ./img/wmocs/2-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/2-1x.jpg" alt="the webbing around the cushion" width="366"
+                                    height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">The webbing around the cushion provides an extra layer
+                                of
+                                support
+                                by giving a structure to
+                                the buckwheat inside. This
+                                also doubles as an integrated handle.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/3-1x.jpg 1x,
+                                        ./img/wmocs/3-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/3-1x.jpg" alt="high end uphosltery fabric" width="366"
+                                    height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">Inspired by high end uphosltery fabric, the Walden
+                                cushions use a premium fabric that is anti microbial, moisture
+                                resistant, and has a great hand that is designed to last a lifetime.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/4-1x.jpg 1x,
+                                        ./img/wmocs/4-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/4-1x.jpg" alt="gel infused memory foam" width="366" height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">The cushion it topped with a layer of gel infused
+                                memory foam for added comfort and a body adaptive feel.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                        ./img/wmocs/5-1x.jpg 1x,
+                                        ./img/wmocs/5-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                                <img src="./img/wmocs/5-1x.jpg" alt="wrinkle resistant fabric" width="366" height="504">
+                            </picture>
+                            <p class="WMOOCS__list_dskr">Our proprietary fabric is wrinkle resistant and has a
+                                luxurious hand feel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="feedback container">
+                <ul class="feedback__list list">
+                    <div class="feedback__list_item-wrapper">
+                        <li class="feedback__list_item">
+                            <img class="feedback__list_item-img" src="./img/feedback/1.png" alt="AD">
+                            <p class="feedback__dskr">&#8220;Bolster a newfound interest in meditation or
+                                improve a
+                                seasoned
+                                pro&#8217;|s
+                                setup.&#8221;</p>
+                        </li>
+                    </div>
+                    <div class="feedback__list_item-wrapper">
+                        <li class="feedback__list_item">
+                            <img class="feedback__list_item-img" src="./img/feedback/2.png" alt="financial times">
+                            <p class="feedback__dskr">&#8220;Equipment in style&#8221;</p>
+                        </li>
+                    </div>
+                    <div class="feedback__list_item-wrapper">
+                        <li class="feedback__list_item">
+                            <img class="feedback__list_item-img" src="./img/feedback/3.png" alt="all consuming">
+                            <p class="feedback__dskr">&#8220;Underneath this Mat, could be anything: air, the
+                                ocean,
+                                Earth.&#8221;
+                            </p>
+                        </li>
+                    </div>
+                    <div class="feedback__list_item-wrapper">
+                        <li class="feedback__list_item">
+                            <img class="feedback__list_item-img" src="./img/feedback/4.png" alt="GQ">
+                            <p class="feedback__dskr">&#8220;Bath oil is cool, but nothing will reduce mom's
+                                raging
+                                stress
+                                levels
+                                like meditation.&#8221;</p>
+                        </li>
+                    </div>
+                    <div class="feedback__list_item-wrapper">
+                        <li class="feedback__list_item">
+                            <img class="feedback__list_item-img" src="./img/feedback/5.png" alt="buzz feed">
+                            <p class="feedback__dskr">&#8220;The best meditation cushion on Earth.&#8221;</p>
+                        </li>
+                    </div>
+                    <div class="feedback__list_item-wrapper">
+                        <li class="feedback__list_item">
+                            <img class="feedback__list_item-img" src="./img/feedback/6.png" alt="design milk co.">
+                            <p class=" feedback__dskr">&#8220;A comfortable place to relax so you can dive into
+                                your
+                                meditation
+                                sessions while continuing on your self-care
+                                practice.&#8221;</p>
+                        </li>
+                    </div>
                 </ul>
             </div>
-            <div class="feedback">
-                <ul class="feedback__list">
-                    <li class="feedback__list_item"></li>
-                    <li class="feedback__list_item"></li>
-                    <li class="feedback__list_item"></li>
-                    <li class="feedback__list_item"></li>
-                    <li class="feedback__list_item"></li>
-                    <li class="feedback__list_item"></li>
-                </ul>
-            </div>
-            <div class="SFTS">
+        </section>
+        <section>
+            <div class="SFTS container">
                 <p class="SFTS_info">Space for the self.</p>
                 <button type="button" class="SFTS_btn">Shop Meditation Cushions</button>
             </div>
         </section>
-        <section>
+        <section class="container">
             <h2 class="WNTWT-hdr">Writings by the Walden Team</h2>
-            <ul class="WNTWT_list">
-                <li class="WNTWT__item">
-                    <picture></picture>
-                    <p>Train Your Body, Train Your Mind</p>
-                </li>
-                <li class="WNTWT__item">
-                    <picture></picture>
-                    <p>On Breathing</p>
-                </li>
-                <li class="WNTWT__item">
-                    <picture></picture>
-                    <p>Quiet Places, New York</p>
-                </li>
-                <li class="WNTWT__item">
-                    <picture></picture>
-                    <p>Meditation Styles</p>
-                </li>
-                <li class="WNTWT__item">
-                    <picture></picture>
-                    <p>Sound Bath</p>
-                </li>
-            </ul>
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                            ./img/wntwt/1-1x.jpg 1x,
+                            ./img/wntwt/1-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/1-1x.jpg" alt="train your body, train your mind" width="386"
+                                height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">Train Your Body, Train Your Mind</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                        ./img/wntwt/2-1x.jpg 1x,
+                        ./img/wntwt/2-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/2-1x.jpg" alt="breathing woman" width="386" height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">On Breathing</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                            ./img/wntwt/3-1x.jpg 1x,
+                            ./img/wntwt/3-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/3-1x.jpg" alt="quiet places, new york" width="386" height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">Quiet Places, New York</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                        ./img/wntwt/4-1x.jpg 1x,
+                        ./img/wntwt/4-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/4-1x.jpg" alt="meditation styles" width="386" height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">Meditation Styles</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                        ./img/wntwt/5-1x.jpg 1x,
+                        ./img/wntwt/5-1x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/5-1x.jpg" alt="sound bath" width="386" height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">Sound Bath</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                                                ./img/wntwt/1-1x.jpg 1x,
+                                                ./img/wntwt/1-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/1-1x.jpg" alt="train your body, train your mind" width="386"
+                                height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">Train Your Body, Train Your Mind</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                                            ./img/wntwt/2-1x.jpg 1x,
+                                            ./img/wntwt/2-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/2-1x.jpg" alt="breathing woman" width="386" height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">On Breathing</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                                                ./img/wntwt/3-1x.jpg 1x,
+                                                ./img/wntwt/3-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/3-1x.jpg" alt="quiet places, new york" width="386" height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">Quiet Places, New York</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                                            ./img/wntwt/4-1x.jpg 1x,
+                                            ./img/wntwt/4-2x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/4-1x.jpg" alt="meditation styles" width="386" height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">Meditation Styles</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="
+                                            ./img/wntwt/5-1x.jpg 1x,
+                                            ./img/wntwt/5-1x.jpg 2x" media="(min-device-pixel-ratio: 2)">
+                            <img src="./img/wntwt/5-1x.jpg" alt="sound bath" width="386" height="504">
+                        </picture>
+                        <p class="WNTWT__item_dskr">Sound Bath</p>
+                    </div>
         </section>
     </main>
     <footer>
-        <p class="footer_signup">Sign up for our newsletter</p>
-        <button type="submit" class="footer_signup_btn">Enter email</button>
-        <div class="footer_menu">
-            <p class="copyright">© 2021 Walden</p>
-            <ul class="footer_menu__list">
-                <li class="footer_menu__list_item"><a href="#">FAQ</a></li>
-                <li class="footer_menu__list_item"><a href="#">Reading</a></li>
-                <li class="footer_menu__list_item"><a href="#">love@walden.us</a></li>
-                <li class="footer_menu__list_item"><a href="#">Wholesale</a></li>
-                <li class="footer_menu__list_item"><a href="#">Instagram</a></li>
-            </ul>
+        <div class="footer__wrapper container">
+            <p class="footer_signup">Sign up for our newsletter</p>
+            <button type="button" class="footer_signup_btn">Enter email</button>
+            <div class="footer_menu">
+                <p class="footer__copyright">&#169; 2021 Walden</p>
+                <ul class="footer_menu__list list">
+                    <li><a class="footer_menu__list_item-link link" href="#">FAQ</a></li>
+                    <li><a class="footer_menu__list_item-link link" href="#">Reading</a></li>
+                    <li><a class="footer_menu__list_item-link link" href="#">love@walden.us</a></li>
+                    <li><a class="footer_menu__list_item-link link" href="#">Wholesale</a></li>
+                    <li><a class="footer_menu__list_item-link link" href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="free-shipping_wrapper">
             <p class="free-shipping">Free Shipping Over $100, Returns, and a One-Year Warranty</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
 </body>
 
 </html>
